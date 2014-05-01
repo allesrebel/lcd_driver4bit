@@ -21,7 +21,7 @@
 #define CTLPout	P1OUT	//output port for the ctrl sigs
 #define CTLPort	P1DIR	//port information
 /*
- * Define Data bus bits
+ * Define Data bus bits TODO: Make these work for any data lines (not just 7->4)
  */
 #define D7 		BIT7
 #define D6 		BIT6
