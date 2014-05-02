@@ -109,7 +109,7 @@ void askQuestion(char* question, char* options) {
 
 	lcd_send_string(question);	//write out the question
 
-	lcd_wr_inst(0xC0);	// sets cursor to the top left
+	lcd_wr_inst(0xC0);	// sets cursor to the top right
 	__delay_cycles(4000); //allows cursor to move
 
 	lcd_send_string(options);	//write out the options

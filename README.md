@@ -8,6 +8,9 @@ This particiular implementation should be work for any MSP430 design, but we imp
 Written for a microprocessor based design course at Calpoly San Luis Obispo
 
 ### Change Log
+  * 5/1/2014 v0.93
+  	* Fixed minor comment problems
+  	* Removed some unimplemented functions
   * 5/1/2014 v0.9
 	* Added ability to use any pin on same port as a db pin
 	* minor demo fixes, both buttons work now
