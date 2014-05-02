@@ -1,5 +1,5 @@
 /*
- * main.c
+ * main.c - Good or Evil!
  * A demo application using the 4 bit lcd driver and
  * button interrupts. A simple personality test game
  *
@@ -51,13 +51,13 @@ int main(void) {
 	// Set DCO step + modulation
 
 	//Initialize Registers as outputs
-	P1DIR &= ~(BIT3 /*+ BIT2*/);
+	P1DIR &= ~(BIT3 + BIT2);
 
 	// Interrupt Button Push
-	P1REN |= BIT3 /*+ BIT2*/;               // pull up resisters on port 3 and 2
-	P1IE |= BIT3 /*+ BIT2*/;               // interrupts enabled on port 3 and 2
-	P1IES |= BIT3 /*+ BIT2*/;  // interrupt triggered on hi->lo edge transistion
-	P1IFG &= ~(BIT3 /*+ BIT2*/);       // ensure that the interrupts are cleared
+	P1REN |= BIT3 + BIT2;		// pull up resisters on port 3 and 2
+	P1IE |= BIT3 + BIT2;		// interrupts enabled on port 3 and 2
+	P1IES |= BIT3 + BIT2;		// interrupt triggered on hi->lo edge transistion
+	P1IFG &= ~(BIT3 + BIT2);	// ensure that the interrupts are cleared
 
 	lcd_initialize();
 

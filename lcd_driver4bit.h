@@ -2,6 +2,7 @@
  * lcd_driver4bit.h
  * Library version of the 4bit LCD_driver written for
  * Microprocessor class.
+ * 	   Version: 0.9
  *  Created on: May 1, 2014
  *     Authors: Rebel, Manrique
  */
@@ -18,10 +19,10 @@
 #define E		BIT2
 #define RW		BIT1
 #define RS		BIT0
-#define CTLPout	P1OUT	//output port for the ctrl sigs
-#define CTLPort	P1DIR	//port information
+#define CTLPout	P2OUT	//output port for the ctrl sigs
+#define CTLPort	P2DIR	//port information
 /*
- * Define Data bus bits TODO: Make these work for any data lines (not just 7->4)
+ * Define Data bus bits
  */
 #define D7 		BIT7
 #define D6 		BIT6
