@@ -9,5 +9,5 @@ Written for a microprocessor based design course at Calpoly San Luis Obispo
 
 ### Change Log
   * 5/1/2014 v0.9
-     * Added ability to use any pin on same port as a db pin
-     *minor demo fixes, both buttons work now
+	* Added ability to use any pin on same port as a db pin
+	* minor demo fixes, both buttons work now
